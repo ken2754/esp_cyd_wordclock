@@ -1,0 +1,29 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "display_driver.c"
+        "touch_driver.c"
+        "ui.c"
+        "ui_fonts.c"
+        "word_clock.c"
+        "image_fetcher.c"
+        "settings_mgr.c"
+        "wifi_portal.c"
+        "sntp_time.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        esp_lcd
+        esp_http_client
+        esp_http_server
+        esp_netif
+        esp_wifi
+        nvs_flash
+        spiffs
+        esp_event
+        driver
+        freertos
+        lwip
+        mbedtls
+        lvgl
+)
